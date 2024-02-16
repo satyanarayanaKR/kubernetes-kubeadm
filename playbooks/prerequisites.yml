@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+    - name: Disabling the swap on all nodes
+      shell: swapoff -a
+    - name: Commenting the swap in fstab
+      replace:
+        path: /etc/fstab/
+        regexp: '(.*swap*)'
+        replace: '#\1'
