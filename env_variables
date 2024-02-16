@@ -5,7 +5,7 @@ packages:
   - kubeadm
   - kubectl
 services:
-#  - docker
+  - docker
   - kubelet
   - firewalld
 ports:
