@@ -5,7 +5,7 @@
   tasks:
     - name: Creating a kubernetes repo
       file: 
-        path: /etc/yum/repos.d/kubernetes.repo
+        path: /etc/yum.repos.d/kubernetes.repo
         state: touch
     - name: Adding repository details
       blockinfile:
@@ -44,4 +44,4 @@
       loop_control:
         loop_var: element
     - name: Enabling Bridge Firewall Rule
-     shell: "echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables"      
+      shell: "echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables"      

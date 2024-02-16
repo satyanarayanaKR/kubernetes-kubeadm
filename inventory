@@ -1,0 +1,7 @@
+[kubernetes-master-nodes]
+localhost ansible_connection=local
+190.170.1.171 ansible_connection=local
+
+[kubernetes-worker-nodes]
+190.170.1.153
+#190.170.1.154

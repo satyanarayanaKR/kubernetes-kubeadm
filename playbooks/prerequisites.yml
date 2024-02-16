@@ -5,6 +5,6 @@
       shell: swapoff -a
     - name: Commenting the swap in fstab
       replace:
-        path: /etc/fstab/
+        path: /etc/fstab
         regexp: '(.*swap*)'
         replace: '#\1'
